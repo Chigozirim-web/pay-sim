@@ -1,0 +1,13 @@
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+
+export default function Signup() {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-screen gap-4">
+        <div>Signup Page</div>
+        <Link to="/">
+          <Button variant="secondary">Back to Home</Button>
+        </Link>
+      </div>
+    );
+  }
