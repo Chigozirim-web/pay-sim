@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { BrowserRouter, Link, useRoutes } from "react-router-dom";
+import { BrowserRouter, useRoutes } from "react-router-dom";
 import { routes } from "./routes";
 
 function AppRoutes() {
