@@ -1,13 +1,17 @@
 import { Button } from "@/components/ui/button"
+import { BrowserRouter, Link, useRoutes } from "react-router-dom";
+import { routes } from "./routes";
 
-function App() {
-  return (
-    <div className="flex min-h-svh flex-col items-center justify-center">
-      <Button className='mb-4'>Home Page confirmaton </Button>
-
-      <Button>Paysim App </Button>
-    </div>
-  )
+function AppRoutes() {
+  return useRoutes(routes);
 }
-
-export default App
+export default function App() {
+  return (
+    <>
+      <div className="flex bg-primary justify-center items-center"> <Button>Paysim App </Button></div>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
+    </>
+  );
+}
